@@ -39,9 +39,10 @@ body {
 /* 现在我需要一张白纸 */
 
 #paper{
-  width: 50vw; height: 100vh;
-  position: fixed; right: 0;
-  top: 0; background: #222;
+  width: 44vw; height: 92vh;
+  position: fixed; right: 4vw;
+  top: 4vh; background: rgba(255,255,255,.5);
+  border-radius: 15px;
   padding: 16px;
 }
 #paper > .content{
@@ -88,7 +89,7 @@ var mdText = `
 `
 
 writeCss('',cssText,()=>{
-  createPaper(()=>{
+  createPaper(()=>{debugger
     writeMarkdown(mdText,()=>{
       writeCss(cssText,cssText2,()=>{
         convertMdToHtml(()=>{

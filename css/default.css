@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#window{
+  width: 44vw;
+  height: 92vh;
+  position: fixed;
+  top: 4vh;
+  left: 4vw;
+}
+.token.selector,
+.token.punctuation,
+.token.property,
+.token.atrule,
+.token.function{
+  color: black;
+}
+.cssCode{
+  height: 100%;
+  overflow: auto;
+}
+@keyframes breath{
+  0%{ box-shadow: 0 0 10px rgba(0,0,0,1) },
+  100%{ box-shadow: 0 0 10px rgba(0,0,0,0.2) }
+}

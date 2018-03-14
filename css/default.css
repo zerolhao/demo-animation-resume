@@ -3,12 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  height: 100vh;
+  background: 
+    linear-gradient(to bottom, #1e5799 0%,
+    #207cca 25%,#207cca 35%,#2989d8 58%,#7db9e8 100%);
+}
 #window{
-  width: 44vw;
-  height: 92vh;
+  width: 100vw;
+  background: #eee;
+  height: 100%;
   position: fixed;
-  top: 4vh;
-  left: 4vw;
+  top: 0;
+  left: 0;
 }
 .token.selector,
 .token.punctuation,

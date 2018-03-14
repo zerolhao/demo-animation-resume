@@ -9,9 +9,17 @@ var cssText = `/* 面试官你好，我是凌号。
 }
 body {
   font-size: 16px;
-  background-color: #eee;
+}
+#window{
+  width: 44vw;
+  height: 92vh;
+  position: fixed;
+  top: 4vh;
+  left: 4vw;
+  background: rgba(0,0,0,.7);
 }
 .cssCode {
+  color: #777;
   padding: 16px;
   border: 1px solid #aaa;
 }
@@ -21,7 +29,7 @@ body {
 .token.punctuation{ color: #999; }
 .token.property{ color: #905; }
 .token.atrule{ color: #07a; }
-.token.function{ coloe: #DD4A68; }
+.token.function{ color: #DD4A68; }
 
 /* 添加呼吸效果 */
 .cssCode {

@@ -31,13 +31,14 @@ body {
 /* 现在我需要一张白纸 */
 
 #paper{
-  width: 44vw; height: 92vh;
-  position: fixed; right: 4vw;
-  top: 4vh; border: 1px solid red;
+  width: 50vw; height: 100vh;
+  position: fixed; right: 0;
+  top: 0; background: #222;
   padding: 16px;
 }
 #paper > .content{
   display: block;
+  padding: 16px;
 }
 
 /* 这样我就可以在白纸上写字了，请看右边 */
@@ -56,17 +57,22 @@ var cssText3 = `
 `
 var mdText = `
 # 自我介绍
+
 我叫凌号，1996年3月出生，
-毕业于安徽扬子职业技术学院，自学前端半年，希望应聘前端开发岗位。
-# 技能结婚送啊
-- HTML5
-- JavaScript
-- CSS3
-- jQuery
+毕业于安徽扬子职业技术学院，自学前端半年，
+希望应聘前端开发岗位。
+
+# 技能介绍
+  - HTML5
+  - JavaScript
+  - CSS3
+  - jQuery
+
 # 项目介绍
   1. canvas 画板
   2. 仿苹果风格轮播
   3. 会动的简历
+
 # 联系方式
   - QQ: 837650700
   - Email: zerolhao@foxmail.com
@@ -97,7 +103,7 @@ function writeCss(prefix,code, fn) {
       window.clearInterval(id)
       fn && fn.call()
     }
-  }, 1)
+  }, 35)
 }
 
 function createPaper(fn) {
@@ -120,11 +126,11 @@ function writeMarkdown(mdText,fn){
       window.clearInterval(id)
       fn && fn.call()
     }
-  }, 10)
+  }, 35)
 }
 function convertMdToHtml(fn){
   let mdEle = document.createElement('div')  
-  mdEle.className = 'html markdown-body'
+  mdEle.className = 'markdown-body'
   mdEle.innerHTML = marked(mdText)
   let content = document.querySelector('#paper>.content')
   content.replaceWith(mdEle)

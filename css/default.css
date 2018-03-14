@@ -25,3 +25,28 @@
   0%{ box-shadow: 0 0 10px rgba(0,0,0,1) },
   100%{ box-shadow: 0 0 10px rgba(0,0,0,0.2) }
 }
+
+.content{
+  padding: 16px;
+  background: white;
+  height: 100%;
+}
+.markdown-body{
+  padding: 16px;
+  background: white;
+  height: 100%;
+  overflow: auto;
+}
+.markdown-body>h1{
+  padding-bottom: 0.3em;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eaecef
+}
+.markdown-body>p{
+  margin-bottom: 16px;
+}
+.markdown-body>ul,
+.markdown-body>ol{
+  padding-left: 2em;
+  margin-bottom: 16px;
+}

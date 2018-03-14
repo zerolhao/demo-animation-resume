@@ -93,7 +93,7 @@ writeCss('',cssText,()=>{
     writeMarkdown(mdText,()=>{
       writeCss(cssText,cssText2,()=>{
         convertMdToHtml(()=>{
-          writeCss(cssText+cssText2,cssText3)
+          writeCss(cssText + cssText2,cssText3)
         })
       })
     })
